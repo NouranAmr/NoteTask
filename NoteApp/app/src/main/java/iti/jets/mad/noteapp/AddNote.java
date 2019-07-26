@@ -23,12 +23,12 @@ public class AddNote extends AppCompatActivity {
         Intent intent=getIntent();
         if(intent.hasExtra("note_id"))
         {
-            setTitle("Edit Note");
+            setTitle(R.string.EditNote);
             titleEditText.setText(intent.getStringExtra("note_title"));
             contentEditText.setText(intent.getStringExtra("note_content"));
         }
         else {
-            setTitle("Add Note");
+            setTitle(R.string.AddNote);
         }
     }
 

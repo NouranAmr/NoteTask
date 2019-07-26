@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="facebook_app_id">392276974747144</string>
+    <string name="fb_login_protocol_scheme">fb392276974747144</string>
+    <string name="email">الايميل</string>
+    <string name="Profile_name">اسم المستخدم</string>
+    <string name="description">المحتوى</string>
+    <string name="title">العنوان</string>
+    <string name="EditNote">تعديل الملحوظه</string>
+    <string name="AddNote">اضافه الملحوظه</string>
+    <string name="add">اضافه</string>
+    <string name="deleteAllNotes">مسح كل الملحوظات</string>
+    <string name="logout">الخروج</string>
+    <string name="logoutDialoug">هل تود الغاء تسجيل الدخول؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="deleteNoteToast">مسح كل الملحوظات بنجاح</string>
+    <string name="loggedoutToast">الغاء تسجيل الدخول</string>
+    <string name="notenotSavedToast">فشل تسجيل الملحوظه</string>
+    <string name="updateNoteToast">تغيير الملحوظه بنجاح</string>
+    <string name="updateNoteFailToast">فشل تغيير الملحوظه </string>
+    <string name="NoteSavedSucessfullyToast">تسجيل الملحوظه بنجاح</string>
+    <string name="DeletedToast">مسح الملحوظه بنجاح</string>
+
+
+</resources>

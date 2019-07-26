@@ -24,7 +24,7 @@
             android:layout_marginEnd="164dp"
             android:ems="10"
             android:layout_margin="8dp"
-            android:hint="Title"
+            android:hint="@string/title"
             android:background="@android:color/transparent"
             android:textColorHint="@color/colorblue"
             android:inputType="textPersonName"

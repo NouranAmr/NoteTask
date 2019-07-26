@@ -78,7 +78,7 @@ public class NoteListActivity extends AppCompatActivity {
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
 
                 noteViewModel.delete(noteAdapter.getSpecificNote(viewHolder.getAdapterPosition()));
-                Toast.makeText(NoteListActivity.this, "Note Deleted Sucessfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(NoteListActivity.this, getString(R.string.DeletedToast), Toast.LENGTH_SHORT).show();
             }
         }).attachToRecyclerView(recyclerView);
         noteAdapter.setOnItemClickListener(new NoteAdapter.onItemClickListener() {
@@ -102,14 +102,14 @@ public class NoteListActivity extends AppCompatActivity {
             String noteTitle = data.getStringExtra("note_title");
             String noteContent = data.getStringExtra("note_content");
             noteViewModel.insert(new Note(noteTitle, noteContent,sharedpreferences.getString("userID",null)));
-            Toast.makeText(this, "Note Saved Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.NoteSavedSucessfullyToast), Toast.LENGTH_SHORT).show();
         }
         else if(requestCode == EDIT_NOTE_REQUEST && resultCode == RESULT_OK)
         {
             int id=data.getIntExtra("note_id",-1);
             if(id==-1)
             {
-                Toast.makeText(this, "Note Cant Update", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.updateNoteFailToast), Toast.LENGTH_SHORT).show();
                 return;
             }
             String noteTitle = data.getStringExtra("note_title");
@@ -118,10 +118,10 @@ public class NoteListActivity extends AppCompatActivity {
             note.setId(id);
             noteViewModel.update(note);
 
-            Toast.makeText(this, "Updated Scuessfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.updateNoteToast), Toast.LENGTH_SHORT).show();
         }
         else {
-            Toast.makeText(this, "Note not Saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.notenotSavedToast), Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -137,14 +137,14 @@ public class NoteListActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.deletes_notes_item:
                 noteViewModel.deleteall(userID);
-                Toast.makeText(this, "allNotes Deleted Sucessfuly", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.deleteNoteToast), Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.logout_item:
                 new AlertDialog.Builder(this)
                         .setIcon(android.R.drawable.ic_dialog_alert)
-                        .setTitle("Logout")
-                        .setMessage("Are you sure you want to Logout?")
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                        .setTitle(R.string.logout)
+                        .setMessage(R.string.logoutDialoug)
+                        .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener()
                         {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -152,13 +152,13 @@ public class NoteListActivity extends AppCompatActivity {
                                 editor.putString("userID","");
                                 editor.commit();
                                 String usrr= sharedpreferences.getString("userID",null);
-                                Toast.makeText(NoteListActivity.this, "logged out", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(NoteListActivity.this, getString(R.string.loggedoutToast), Toast.LENGTH_SHORT).show();
                                 //Toast.makeText(NoteListActivity.this, sharedpreferences.getString("userID","no"), Toast.LENGTH_SHORT).show();
                                 finish();
                             }
 
                         })
-                        .setNegativeButton("No", null)
+                        .setNegativeButton(R.string.no, null)
                         .show();
                 return true;
             default:

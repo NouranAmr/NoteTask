@@ -5,5 +5,21 @@
     <string name="email">email</string>
     <string name="Profile_name">profileName</string>
     <string name="description">Content</string>
+    <string name="title">Title</string>
+    <string name="EditNote">Edit Note</string>
+    <string name="AddNote">Add Note</string>
+    <string name="add">add</string>
+    <string name="deleteAllNotes">DeleteAll Notes</string>
+    <string name="logout">Logout</string>
+    <string name="logoutDialoug">Are you sure you want to Logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="deleteNoteToast">allNotes Deleted Sucessfuly</string>
+    <string name="loggedoutToast">logged out</string>
+    <string name="notenotSavedToast">Note not Saved</string>
+    <string name="updateNoteToast">Updated Scuessfully</string>
+    <string name="updateNoteFailToast">Note Cant Update</string>
+    <string name="NoteSavedSucessfullyToast">Note Saved Successfully</string>
+    <string name="DeletedToast">Note Deleted Sucessfully</string>
 
 </resources>
