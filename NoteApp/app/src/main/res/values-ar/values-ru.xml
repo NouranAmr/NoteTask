@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">NoteApp</string>
+    <string name="app_name">تطبيق الملحوظه</string>
     <string name="facebook_app_id">392276974747144</string>
     <string name="fb_login_protocol_scheme">fb392276974747144</string>
     <string name="email">الايميل</string>
@@ -22,6 +22,7 @@
     <string name="updateNoteFailToast">فشل تغيير الملحوظه </string>
     <string name="NoteSavedSucessfullyToast">تسجيل الملحوظه بنجاح</string>
     <string name="DeletedToast">مسح الملحوظه بنجاح</string>
+    <string name="titleContent">برجاء اضافه عنوان و محتوى الملحوظه</string>
 
 
 </resources>

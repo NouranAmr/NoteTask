@@ -57,7 +57,7 @@ public class AddNote extends AppCompatActivity {
         String content=contentEditText.getText().toString();
         if(title.isEmpty() || content.isEmpty()){
 
-        Toast.makeText(this, "please add a title and content of note", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.titleContent), Toast.LENGTH_SHORT).show();
         return;
     }
         Intent intent=new Intent();

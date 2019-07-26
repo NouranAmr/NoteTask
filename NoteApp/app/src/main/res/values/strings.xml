@@ -21,5 +21,6 @@
     <string name="updateNoteFailToast">Note Cant Update</string>
     <string name="NoteSavedSucessfullyToast">Note Saved Successfully</string>
     <string name="DeletedToast">Note Deleted Sucessfully</string>
+    <string name="titleContent">please add a title and content of note</string>
 
 </resources>
