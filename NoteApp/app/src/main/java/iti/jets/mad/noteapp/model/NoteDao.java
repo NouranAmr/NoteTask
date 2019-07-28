@@ -1,4 +1,4 @@
-package iti.jets.mad.noteapp;
+package iti.jets.mad.noteapp.model;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
@@ -6,6 +6,8 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
 import java.util.List;
+
+import iti.jets.mad.noteapp.model.Note;
 
 @Dao
 public interface NoteDao {

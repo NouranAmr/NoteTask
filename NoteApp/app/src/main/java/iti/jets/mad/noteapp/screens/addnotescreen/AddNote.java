@@ -1,4 +1,4 @@
-package iti.jets.mad.noteapp;
+package iti.jets.mad.noteapp.screens.screens.addnotescreen;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import iti.jets.mad.noteapp.R;
 
 public class AddNote extends AppCompatActivity {
 

@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".screens.screens.splashscreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,12 +20,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddNote"
-            android:parentActivityName=".NoteListActivity" />
+            android:name=".screens.screens.addnotescreen.AddNote"
+            android:parentActivityName=".screens.screens.notelistscreen.NoteListActivity" />
         <activity
-            android:name=".NoteListActivity"
+            android:name=".screens.screens.notelistscreen.NoteListActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".screens.screens.loginscreen.MainActivity">
 
         </activity>
         <activity

@@ -1,4 +1,4 @@
-package iti.jets.mad.noteapp;
+package iti.jets.mad.noteapp.screens.screens.notelistscreen;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -26,6 +26,13 @@ import android.widget.Toast;
 import com.facebook.login.LoginManager;
 
 import java.util.List;
+
+import iti.jets.mad.noteapp.R;
+import iti.jets.mad.noteapp.model.Note;
+import iti.jets.mad.noteapp.model.NoteAdapter;
+import iti.jets.mad.noteapp.screens.screens.splashscreen.SplashScreenActivity;
+import iti.jets.mad.noteapp.screens.screens.addnotescreen.AddNote;
+import iti.jets.mad.noteapp.viewmodel.NoteViewModel;
 
 public class NoteListActivity extends AppCompatActivity {
     public static final int ADD_NOTE_REQUEST = 1;
@@ -193,6 +200,6 @@ public class NoteListActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(this,SplashScreenActivity.class));
+        startActivity(new Intent(this, SplashScreenActivity.class));
     }
 }

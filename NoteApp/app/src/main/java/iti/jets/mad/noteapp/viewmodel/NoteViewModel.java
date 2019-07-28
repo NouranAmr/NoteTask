@@ -1,4 +1,4 @@
-package iti.jets.mad.noteapp;
+package iti.jets.mad.noteapp.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -6,6 +6,9 @@ import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
 import java.util.List;
+
+import iti.jets.mad.noteapp.model.Note;
+import iti.jets.mad.noteapp.model.NoteRepository;
 
 public class NoteViewModel extends AndroidViewModel {
     private NoteRepository noteRepository;

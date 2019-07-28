@@ -1,4 +1,4 @@
-package iti.jets.mad.noteapp;
+package iti.jets.mad.noteapp.model;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
@@ -7,6 +7,10 @@ import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 
 import java.util.List;
+
+import iti.jets.mad.noteapp.model.Note;
+import iti.jets.mad.noteapp.model.NoteDao;
+import iti.jets.mad.noteapp.model.NoteDataBase;
 
 public class NoteRepository {
 
